@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Speak It</title>
+  <!--  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+</head>
+<body>
+<div class="wrapper">
+  <div class="enter-screen">
+    <h1 class="enter-screen__title">SPEAKIT</h1>
+    <p class="enter-screen__description">Click on the words to hear them sound.<br>
+      Click on the button and speak the words into the microphone.</p>
+    <button class="button enter-screen__button">Start</button>
+  </div>
+  <div class="main hide">
+    <div class="header">
+      <ul class="level">
+        <li class="point point_active"></li>
+        <li class="point"></li>
+        <li class="point"></li>
+        <li class="point"></li>
+        <li class="point"></li>
+        <li class="point"></li>
+      </ul>
+    </div>
+    <div class="central-screen">
+      <div class="central-screen__image">
+        <img class="img" src="./assets/img/blank.jpg" alt="img">
+      </div>
+      <div class="central-screen__translation">Спать</div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <span class="card__audio-icon">
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor"
+                                                                          d="M15.788 13.007a3 3 0 110 5.985c.571 3.312 2.064 5.675 3.815 5.675 2.244 0 4.064-3.88 4.064-8.667 0-4.786-1.82-8.667-4.064-8.667-1.751 0-3.244 2.363-3.815 5.674zM19 26c-3.314 0-12-4.144-12-10S15.686 6 19 6s6 4.477 6 10-2.686 10-6 10z"
+                                                                          fill-rule="evenodd"></path></svg>
+        </span>
+        <p class="card__word">remain</p>
+        <p class="card__transcription">[riméin]</p>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="button main__button_small">Restart</button>
+      <button class="button main__button_wide">Speak please</button>
+      <button class="button main__button_small">Results</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

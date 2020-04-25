@@ -1,0 +1,130 @@
+.level {
+  display: flex;
+  margin: 20px 0 80px 20px;
+}
+
+.point {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  margin-top: -10px;
+  border-radius: 50%;
+  background: $point-color radial-gradient($point-color 0%, $point-color 50%, #ffffff 50%, #ffffff 100%);
+  margin-right: 10px;
+  box-shadow: 0 0 0 2px #ffffff;
+  cursor: pointer;
+  transition: .5s;
+
+  &:not(:first-child) {
+    &:before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      top: 9px;
+      right: 5px;
+      background-color: $point-color;
+    }
+  }
+
+
+  &:hover {
+    box-shadow: inset 0 0 0 2px #ffffff, inset 0 0 0 3px $point-color;
+  }
+}
+
+.point_active {
+  box-shadow: 0 0 0 2px $point-color, inset 0 0 0 2px #ffffff, inset 0 0 0 3px $point-color;
+
+  &:hover {
+    box-shadow: 0 0 0 2px $point-color, inset 0 0 0 2px #ffffff, inset 0 0 0 3px $point-color;
+  }
+}
+
+.central-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .central-screen__image {
+    width: 390px;
+    height: 260px;
+
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px rgba(118, 118, 118, .25);
+
+    img{
+      object-fit: cover;
+      width: 390px;
+      height: 260px;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+
+}
+
+.main__button_wide,
+.main__button_small {
+  padding: 0;
+  margin: 0 7px;
+  min-height: 60px;
+}
+
+.main__button_wide {
+  //min-width: 50vw;
+  flex: 2 0 calc(50vw - 14px);
+}
+
+.main__button_small {
+  flex: 1 0 calc(25vw - 14px);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1.4;
+  min-width: 200px;
+  min-height: 70px;
+  margin: 10px;
+  border: 1px solid rgb(206, 212, 218);
+  border-radius: 5px;
+  background-color: #fff;
+  transition: .3s;
+}
+
+.card__audio-icon {
+  position: absolute;
+  top: calc(50% - 17px);
+  left: 10px;
+  width: 34px;
+  height: 34px;
+
+  svg {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.card__word {
+  font-size: 18px;
+}
+
+.card__transcription {
+  font-size: 16px;
+  font-weight: 400;
+}
