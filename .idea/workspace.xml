@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08905563-e047-46dc-a4f4-4ab5ff2f1f75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/assets/img/mainPageBackground1.png" beforeDir="false" />
-    </list>
+    <list default="true" id="08905563-e047-46dc-a4f4-4ab5ff2f1f75" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587644849871</updated>
-      <workItem from="1587644850933" duration="66271000" />
+      <workItem from="1587644850933" duration="66366000" />
     </task>
     <task id="LOCAL-00001" summary="add develop branch">
       <created>1587803733757</created>
@@ -92,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587923450853</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: optimised image">
+      <created>1587923969446</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587923969446</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +119,7 @@
     <MESSAGE value="feat: add standard functional" />
     <MESSAGE value="feat: add statistics" />
     <MESSAGE value="fix: some bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: some bug fixes" />
+    <MESSAGE value="fix: optimised image" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: optimised image" />
   </component>
 </project>
