@@ -1,10 +1,12 @@
+import './controller';
+import {startApp, showMainScreen} from './controller';
 
 window.onload = function () {
   const startButton = document.querySelector('.enter-screen__button');
   startButton.addEventListener('click', showMainScreen);
+  startApp(); // закомментировать в финальном релизе
 };
 
-function showMainScreen() {
-  document.querySelector('.enter-screen').classList.add('hide');
-  document.querySelector('.main').classList.remove('hide');
-}
+
+
+

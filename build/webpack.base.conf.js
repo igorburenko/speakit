@@ -20,13 +20,14 @@ const PAGES_DIR = PATHS.src;
 const PAGES = fs
   .readdirSync(PAGES_DIR)
   .filter(fileName => fileName.endsWith(".html"));
-
+// require('babel-polyfill');
 module.exports = {
   externals: {
     paths: PATHS
   },
   entry: {
     app: PATHS.src
+    // app: ['babel-polyfill', PATHS.src]
     // module: `${PATHS.src}/your-module.js`,
   },
   output: {
