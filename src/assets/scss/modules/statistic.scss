@@ -22,6 +22,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 10px;
+  align-items: center;
 }
 
 .statistic__result {
@@ -29,6 +30,7 @@
   border: 1px solid #3a779338;
   padding: 5px;
   border-radius: 5px;
+  height: fit-content;
 }
 
 .result__date {
@@ -68,4 +70,5 @@
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  height: 50px;
 }
