@@ -1,9 +1,10 @@
 .main {
-  max-width: 1100px;
+  max-width: 90%;
   align-self: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  //background-image: url("/assets/img/mainPageBackground1.png");
 }
 
 .level {
@@ -75,6 +76,7 @@
 
 .central-screen__translation {
   height: 40px;
+  line-height: 40px;
 }
 
 .buttons {
@@ -118,7 +120,7 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card {
@@ -131,7 +133,7 @@
   line-height: 1.4;
   min-width: 200px;
   min-height: 70px;
-  margin: 10px 2px;
+  margin: 7px 5px;
   border: 1px solid rgb(206, 212, 218);
   border-radius: 5px;
   background-color: #fff;
@@ -173,4 +175,26 @@
 .game-score {
   align-self: center;
   min-height: 50px;
+}
+
+.translation__block {
+  position: relative;
+  display: flex;
+  min-width: 360px;
+  min-height: 40px;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #3A7793;
+    opacity: 0;
+    transition: .3s ease;
+
+    &.active {
+      opacity: 1;
+    }
+  }
 }

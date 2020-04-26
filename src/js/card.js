@@ -20,7 +20,7 @@ class Card {
           d="M15.788 13.007a3 3 0 110 5.985c.571 3.312 2.064 5.675 3.815 5.675 2.244 0 4.064-3.88 4.064-8.667 0-4.786-1.82-8.667-4.064-8.667-1.751 0-3.244 2.363-3.815 5.674zM19 26c-3.314 0-12-4.144-12-10S15.686 6 19 6s6 4.477 6 10-2.686 10-6 10z"
           fill-rule="evenodd"></path></svg>
       </span>
-      <p class="card__word">${this.word}</p>
+      <p class="card__word">${this.word.toLowerCase()}</p>
       <p class="card__transcription">${this.transcription}</p>
       <audio src="${this.dataUrl}${this.audio}"></audio>`;
     return card;
@@ -40,7 +40,7 @@ class Card {
                                                                               d="M15.788 13.007a3 3 0 110 5.985c.571 3.312 2.064 5.675 3.815 5.675 2.244 0 4.064-3.88 4.064-8.667 0-4.786-1.82-8.667-4.064-8.667-1.751 0-3.244 2.363-3.815 5.674zM19 26c-3.314 0-12-4.144-12-10S15.686 6 19 6s6 4.477 6 10-2.686 10-6 10z"
                                                                               fill-rule="evenodd"></path></svg>
           </span>
-          <span class="result-card__word">${this.word}</span>
+          <span class="result-card__word">${this.word.toLowerCase()}</span>
           <span class="result-card__transcription">${this.transcription}</span>
           <span class="result-card__translation"></span>
       <audio src="${this.dataUrl}${this.audio}"></audio>`;

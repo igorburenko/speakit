@@ -9,13 +9,13 @@
 </head>
 <body>
 <div class="wrapper">
-  <div class="enter-screen hide">
+  <div class="enter-screen">
     <h1 class="enter-screen__title">SPEAKIT</h1>
     <p class="enter-screen__description">Click on the words to hear them sound.<br>
       Click on the button and speak the words into the microphone.</p>
     <button class="button enter-screen__button">Start</button>
   </div>
-  <div class="main">
+  <div class="main hide">
     <div class="header">
       <ul class="level">
         <li class="point point_active" data-id="0"></li>
@@ -32,18 +32,12 @@
       <div class="central-screen__image">
         <img class="img" src="./assets/img/blank.jpg" alt="img">
       </div>
-      <div class="central-screen__translation"></div>
+      <div class="translation__block">
+        <i class="material-icons md-36 icon__mic">mic</i>
+        <div class="central-screen__translation"></div>
+      </div>
     </div>
     <div class="cards">
-      <!--      <div class="card">-->
-      <!--        <span class="card__audio-icon">-->
-      <!--         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor"-->
-      <!--                                                                          d="M15.788 13.007a3 3 0 110 5.985c.571 3.312 2.064 5.675 3.815 5.675 2.244 0 4.064-3.88 4.064-8.667 0-4.786-1.82-8.667-4.064-8.667-1.751 0-3.244 2.363-3.815 5.674zM19 26c-3.314 0-12-4.144-12-10S15.686 6 19 6s6 4.477 6 10-2.686 10-6 10z"-->
-      <!--                                                                          fill-rule="evenodd"></path></svg>-->
-      <!--        </span>-->
-      <!--        <p class="card__word">remain</p>-->
-      <!--        <p class="card__transcription">[riméin]</p>-->
-      <!--      </div>-->
     </div>
     <div class="buttons">
       <button class="button main__button_small button__reset active">Reset</button>
@@ -54,6 +48,7 @@
   <!--  results-->
   <div class="results hide">
     <div class="results-wrapper">
+      <p class="warning-field"></p>
       <div class="errors">
         <div class="title">
           <p>Ошибок</p>
@@ -92,8 +87,13 @@
       </div>
       <div class="results__buttons">
         <button class="button results__return-btn">Return</button>
-        <button class="button results__new-game-btn">New Game</button>
+        <button class="button results__new-game-btn">New Words</button>
+        <button class="button results__statistic">Statistic</button>
       </div>
+    </div>
+  </div>
+  <div class="statistic hide">
+    <div class="statistic__wrapper">
     </div>
   </div>
 </div>
