@@ -261,6 +261,7 @@ function deactivateMicIcon() {
 }
 
 function startGame() {
+  if (gameStarted) return;
   gameStarted = true;
   recognition.start();
   resetMainScreen(true);
