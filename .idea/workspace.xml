@@ -4,6 +4,7 @@
     <list default="true" id="08905563-e047-46dc-a4f4-4ab5ff2f1f75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/speachRecognition.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/speachRecognition.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587644849871</updated>
-      <workItem from="1587644850933" duration="68950000" />
+      <workItem from="1587644850933" duration="70456000" />
     </task>
     <task id="LOCAL-00001" summary="add develop branch">
       <created>1587803733757</created>
@@ -115,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587972323223</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix: game started errors">
+      <created>1588017705217</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588017705217</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +148,7 @@
     <MESSAGE value="fix: optimised image" />
     <MESSAGE value="fix: image path" />
     <MESSAGE value="fix: cursor in results" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: cursor in results" />
+    <MESSAGE value="fix: game started errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: game started errors" />
   </component>
 </project>

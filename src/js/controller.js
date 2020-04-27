@@ -130,20 +130,27 @@ function startApp() {
 }
 
 function findInArrayObject(arr, searchWord) {
-  return arr.findIndex(card => card.word === searchWord);
+  return arr.findIndex(card => card.word.toLowerCase() === searchWord);
 }
 
 function compareAnswer(answer) {
-  const wrongArrCardIndex = findInArrayObject(wrongCards, answer.toLowerCase());
+  let rightAnswer = answer[0];
+  answer.forEach(val => {
+    if (findInArrayObject(wrongCards, val.toLowerCase()) > -1) {
+      rightAnswer = val
+    }
+  });
+  const wrongArrCardIndex = findInArrayObject(wrongCards, rightAnswer.toLowerCase());
   if (wrongArrCardIndex === -1) {
     console.log('Wrong answer');
   } else {
-    addActiveToElement(findInArrayObject(currentDataCards, answer.toLowerCase()));
+    addActiveToElement(findInArrayObject(currentDataCards, rightAnswer.toLowerCase()));
     changeMainPicture(wrongCards[wrongArrCardIndex].image);
     increaseResult(wrongArrCardIndex);
     addToSuccessCardsArr(wrongArrCardIndex);
     checkGameWin() && showResults();
   }
+  return rightAnswer;
 }
 
 function checkGameWin() {
@@ -394,9 +401,14 @@ btnSpeakPlease.addEventListener('click', startGame);
 btnReset.addEventListener('click', resetGame);
 
 recognition.addEventListener('result', (event)  => {
-  let recognized = event.results[0][0].transcript.toLowerCase();
-  mainTranslate.textContent = recognized;
-  compareAnswer(recognized);
+  let recognisedVars = [];
+  for (let resultKey in event.results[0]) {
+    recognisedVars.push(event.results[0][resultKey].transcript);
+  }
+  recognisedVars = recognisedVars.filter(val => val).map(val => val.toLowerCase());
+  // console.log(recognisedVars);
+  // let recognized = event.results[0][0].transcript.toLowerCase();
+  mainTranslate.textContent = compareAnswer(recognisedVars);
 });
 
 recognition.addEventListener('end', () => {
