@@ -198,7 +198,7 @@ function resetMainScreen(speakButton = false) {
 function createResultsTable() {
   const warning = document.createElement('p');
   warning.classList.add('warning-field');
-  if (!successCards.length) {
+  if (!successCards.length && !wrongCards.length) {
     warning.classList.add('results__warning');
     warning.textContent = 'Для начала надо сказать пару слов в микрофон, нажмите Return и говорите';
     document.querySelector('.warning-field').replaceWith(warning);
